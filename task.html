@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks To Do</title>
+    <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/zikons/400/--02-512.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <div id="wrapper">
+                <input type="text" id="new-task-input" placeholder="Tasks To Be Done..">
+                <button id="add-btn">Add</button>
+            </div>
+            <div id="tasks">
+                <p id="pending-tasks">You have 
+                    <span class="count-value">0</span> task(s) to complete
+                </p>
+            </div>
+        </div>
+        <p id="error" style="display: none;">Input cannot be empty!</p>
+        <div class="task" style="display: none;">
+            <input type="checkbox" class="task-check">
+            <span class="taskname">Task Name</span>
+            <input type="text" class="edit-input" style="display: none;">
+            <button class="edit">
+                <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+            <button class="delete">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
